@@ -32,9 +32,9 @@ export class CreaturesController {
   @Patch(':id')
   update(
     @Param('id') id: string,
-    @Body() UpdateCreatureDto: UpdateCreatureDto,
+    @Body() updateCreatureDto: UpdateCreatureDto,
   ) {
-    return this.creaturesService.update(+id, UpdateCreatureDto);
+    return this.creaturesService.update(+id, updateCreatureDto);
   }
   @Delete(':id')
   remove(@Param('id') id: string){

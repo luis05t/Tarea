@@ -17,7 +17,6 @@ export class CreaturesService {
 
   findOne(id: number) {
     return this.prisma.creature.findUnique({where: {id} });
-    ;
   }
 
   update(id: number, updateCreatureDto: UpdateCreatureDto) {
